@@ -3,40 +3,39 @@
 **Project ID:** carlosgletison-ops/prevmotocar-links
 
 ## 1. Visual Theme & Atmosphere
-The design system of Prev MotoCar is built around a **Vibrant Solid Red & High-Contrast White** atmosphere. It captures energy, strong brand authority, protection, and corporate reliability. The visual language uses a solid red backdrop with a subtle white technical grid, populated by opaque, creamy white cards. This creates an extremely clean, readable, and bold visual appearance.
+The design system of Prev MotoCar utilizes a **Corporate Split Dashboard** visual theme. The top header of the page features a bold, curved red banner that serves as a high-contrast backing for the white checkmark shield logo. The main content cards are placed in a container that overlaps the red banner, floating above a clean, luxury light gray background (`#f8fafc`). The overall atmosphere is highly professional, corporate, and clean—modeled after premium web application dashboards.
 
 ## 2. Color Palette & Roles
-* **Vibrant Brand Red** (`#e31c23`): Used as the primary background color of the body to convey security, brand identity, and presence.
-* **Pure Creamy White** (`rgba(255, 255, 255, 0.94)` / `#ffffff`): Used for glassmorphic cards and headers, acting as high-contrast content containers.
-* **Solid White** (`#ffffff`): Used for section titles, vertical bar indicators, and footer texts directly on the red background, ensuring readability.
-* **Dark Charcoal** (`#1f2937`): Used for card titles and main headings to establish legibility on the white cards.
-* **Slate Gray** (`#4b5563`): Used for descriptions and card details to create typographic contrast.
-* **Dimmed White** (`rgba(255, 255, 255, 0.7)`): Used for secondary footer text to maintain visual hierarchy.
+* **Vibrant Brand Red** (`#e31c23` to `#c81016`): Used as the solid gradient backdrop for the top header banner and the footer logo badge to ensure 100% contrast for the white logo.
+* **Luxurious Page Background** (`#f8fafc`): Clean, light gray base of the body to convey trust, clarity, and professionalism.
+* **Pure Card White** (`#ffffff`): The solid fill color of the main content cards and headers to ensure maximum contrast for text.
+* **Dark Charcoal** (`#1f2937`): Used for section headers, card titles, and primary texts inside cards to maximize legibility.
+* **Slate Gray** (`#4b5563`): Used for card details and text descriptions.
+* **Light Red Accent** (`rgba(227, 28, 35, 0.04)`): Used for icon container backgrounds.
 
 ## 3. Typography Rules
-* **Font Family**: Public Sans, a clean, modern, and highly legible sans-serif font.
-* **Titles**: 800 (Extra Bold) or 900 (Black) weight, with a slightly condensed letter-spacing (`-0.02em`) for maximum brand presence.
-* **Body / Subheadings**: 500 (Medium) to 700 (Bold) weight, ensuring strong legibility for emergency card content.
-* **Descriptions / Details**: 400 (Regular) weight, using slate gray color inside cards.
+* **Font Family**: Public Sans, a clean and reliable corporate sans-serif font.
+* **Titles**: 800 (Extra Bold) or 900 (Black) weight, with a slightly condensed letter-spacing (`-0.02em`) for headlines.
+* **Body / Subheadings**: 500 (Medium) to 700 (Bold) weight inside white cards.
+* **Descriptions**: 400 (Regular) weight, using slate gray color inside cards.
 
 ## 4. Component Stylings
 * **Buttons / Direct Link Cards**:
   * Shape: Pill-shaped icons (`rounded-full`) inside rounded rectangular cards (`rounded-lg` with `16px` border-radius).
-  * Color & Borders: Clean white background, thin white borders (`rgba(255, 255, 255, 0.6)`), lighting up to solid white on hover.
-  * Interaction: Glossy white spotlight reflection tracking the mouse pointer, with a translation up (`translateY(-3px)`) and clean drop shadow on hover.
+  * Color & Borders: Opaque white card background, thin gray borders (`rgba(226, 232, 240, 0.9)`), highlighting to red on hover.
+  * Interaction: Crimson spotlight overlay that tracks the mouse pointer, with a translation up (`translateY(-3px)`) and clean shadow on hover.
 * **Cards / Containers**:
   * Corner Roundness: Generously rounded corners (`24px` border-radius or `var(--radius-lg)`).
-  * Background Color: High-opacity white glass (`rgba(255, 255, 255, 0.94)`) with background blur filter (`backdrop-filter: blur(12px)`).
-  * Shadow Depth: Soft dark drop shadow (`rgba(0, 0, 0, 0.15)`) combined with a white outline glow on hover.
-* **Inputs / Forms**:
-  * (N/A for links page).
-* **Brand Logo Badges**:
-  * Shape & Background: Solid red rectangular container (#e31c23) with 12px padding and rounded corners (var(--radius-md)).
-  * Purpose: Provides high-contrast dark backing for the white checkmark shield logo, making it stand out clearly on the light creamy card backgrounds.
+  * Background Color: Solid white background (`#ffffff`).
+  * Shadow Depth: Soft light drop shadow (`rgba(0, 0, 0, 0.04)`) combined with a soft crimson glow outline on hover.
+* **Brand Logo Badges (Footer)**:
+  * Shape & Background: Solid red rectangular container (`#e31c23`) with `0.5rem 1rem` padding and rounded corners.
+  * Purpose: Restores high contrast for the white logo at the bottom of the light gray page.
 
 ## 5. Layout Principles
 * **Whitespace & Margins**: Spacing is configured in a clear vertical hierarchy with `2.25rem` margins between sections and `0.85rem` between individual cards.
+* **Overlapping Grid**: The main content container is positioned with a negative margin (`margin-top: -3.5rem`) so it overlaps the curved red header banner, creating a high-fidelity dashboard layer depth.
 * **Grid & Responsiveness**:
   * Desktop/Tablet: Benefits are organized in a clean 2-column grid (`grid-template-columns: repeat(2, 1fr)`).
-  * Mobile: Grid falls back to a vertical list of horizontal cards to optimize readability and thumb-reach.
-* **Overlay Grid**: A white grid pattern (`background-size: 40px 40px`) overlays the red background at 4% opacity to create a technical layout foundation.
+  * Mobile: Grid falls back to a vertical list of horizontal cards to optimize readability.
+* **Overlay Grid**: A white grid pattern (`background-size: 40px 40px`) overlays the red header banner at 3% opacity.

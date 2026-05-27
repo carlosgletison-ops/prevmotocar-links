@@ -30,6 +30,9 @@ The design system of Prev MotoCar is built around a **Vibrant Solid Red & High-C
   * Shadow Depth: Soft dark drop shadow (`rgba(0, 0, 0, 0.15)`) combined with a white outline glow on hover.
 * **Inputs / Forms**:
   * (N/A for links page).
+* **Brand Logo Badges**:
+  * Shape & Background: Solid red rectangular container (#e31c23) with 12px padding and rounded corners (var(--radius-md)).
+  * Purpose: Provides high-contrast dark backing for the white checkmark shield logo, making it stand out clearly on the light creamy card backgrounds.
 
 ## 5. Layout Principles
 * **Whitespace & Margins**: Spacing is configured in a clear vertical hierarchy with `2.25rem` margins between sections and `0.85rem` between individual cards.

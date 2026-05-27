@@ -344,6 +344,15 @@ html, body {
     box-shadow: 0 0 10px rgba(227, 28, 35, 0.2);
 }
 
+/* Override first section title to white for contrast on Red Banner */
+.links-section .section-title {
+    color: #ffffff;
+}
+.links-section .section-title::before {
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
 /* Benefits Section */
 .benefits-container {
     display: flex;

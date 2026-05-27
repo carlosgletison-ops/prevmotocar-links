@@ -24,6 +24,11 @@
 </head>
 
 <body>
+    <!-- Floating Background Lights for dynamic theme -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+
     <main class="container">
         <!-- Profile / Brand Header -->
         <header class="profile-card glass-panel">
@@ -178,6 +183,20 @@
             <a href="https://www.instagram.com/prevmotocar_/" target="_blank" class="footer-credit">Tranquilidade e Proteção no Caminho</a>
         </footer>
     </main>
+
+    <!-- Spotlight Hover script for interactivity -->
+    <script>
+        document.addEventListener('mousemove', (e) => {
+            const cards = document.querySelectorAll('.glass-panel, .link-card');
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
 </body>
 
 </html>
